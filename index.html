@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .container {
+          position: relative;
+          width: 50%;
+          max-width: 300px;
+        }
+        
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+          border-radius: 30px;
+        }
+        
+.overlay {
+    box-sizing: border-box;
+    border-radius: 30px;
+    opacity: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    transition: .5s ease;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.container .overlay h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0 0 0 2rem;
+}
+.container:hover .overlay {
+    opacity: 1;
+    cursor:default;
+}
+
+        </style>
+        </head>
+        <body>
+        
+        <h2>Image Overlay Title</h2>
+        <p>Hover over the image to see the effect.</p>
+        
+        <div class="container">
+          <img src="avatar.png" alt="Avatar" class="image">
+          <div class="overlay">
+                <h3>Pengembangan Internet Cepat di Indonesia</h3>
+          </div>
+        </div>
+
+</body>
+</html>
